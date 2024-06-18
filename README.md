@@ -101,11 +101,27 @@ El modelo de datos posee 7 tablas
 |  GET  |/Registros/productos/:id|Recupera un Registro de un Producto por su ID|
 |  GET  |/Registros/productos|Recupera el total de Registros de Productos existentes|
 |  GET  |/Registros/productos/vencidos|Recupera el total de Registros de Productos vencidos existentes|
-| POST  |Registros/habitaciones/checkin/:id |Realiza el check-in de una Habitación|
-| POST  |Registros/productos/checkin/:id |Realiza el check-in de un Producto|
-| PUT  |Registros/habitaciones/checkout/:id |Realiza el check-out de una habitación|
-| PUT  |Registros/habitaciones/:id |Realiza modificaciones de una Habitación existente|
-| PUT  |Registros/productos/:id |Realiza modificaciones de un Producto existente|
+| POST  |/Registros/habitaciones/checkin/:id |Realiza el check-in de una Habitación|
+| POST  |/Registros/productos/checkin/:id |Realiza el check-in de un Producto|
+| PUT  |/Registros/habitaciones/checkout/:id |Realiza el check-out de una habitación|
+| PUT  |/Registros/habitaciones/:id |Realiza modificaciones de una Habitación existente|
+| PUT  |/Registros/productos/:id |Realiza modificaciones de un Producto existente|
 |DELETE|/Registros/habitaciones/:id|Elimina un Registro de una Habitación por su ID|
 |DELETE|/Registros/productos/:id|Elimina un Registro de un Producto por su ID|
 
+
+### Reservas
+| verbo |  endpoint  |descripcion|
+|-------|------------|-----------|
+|  GET  |/reservas/habitaciones/:id|Recupera una Reserva de Habitación por su ID|
+|  GET  |/reservas/habitaciones|Recupera el total de Reservas de Habitaciones existentes|
+|  GET  |/reservas/habitaciones/vencidos|Recupera el total de Reservas de Habitaciones vencidas existentes|
+|  GET  |/reservas/productos/:id|Recupera una Reserva de un Producto por su ID|
+|  GET  |/reservas/productos|Recupera el total de Reservas de Productos existentes|
+|  GET  |/reservas/productos/vencidos|Recupera el total de Reservas de Productos vencidas existentes|
+| POST  |/reservas/habitaciones/:num |Crea una nueva Reserva de Habitación para el número especificado|
+| POST  |/reservas/productos/:id |Crea una nueva Reserva de un Producto|
+| PUT  |/reservas/habitaciones/:id |Realiza  modificaciones en una Reserva de una habitación|
+| PUT  |/reservas/productos/:id |Realiza modificaciones en una Reserva de un Producto existente|
+|DELETE|/reservas/habitaciones/:id|Elimina una Reserva de una Habitación por su ID|
+|DELETE|/reservas/productos/:id|Elimina una Reserva de un Producto por su ID|
