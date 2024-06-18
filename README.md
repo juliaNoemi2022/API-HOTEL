@@ -1,6 +1,38 @@
 # API REST DE HOTEL
  Esta aplicación permite gestionar los clientes, habitaciones, productos y reservas de una empresa hotelera.
 
+
+ ## Lanzar la aplicacion
+asegurarse que estén instaladas estas dependencias 
+```
+"dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "joi": "^17.13.1",
+    "moment": "^2.30.1",
+    "nodemon": "^3.1.0",
+    "pg": "^8.11.5",
+    "sequelize": "^6.37.2"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
+  }
+```
+ En caso de no estar instaladas, se debe correr el siguiente comando para instalarlas: 
+
+```npm install```
+
+A continuación, se puede lanzar la aplicacion. Por defecto la aplicación se inicia en el puerto 3001 pero se puede cambiar a otro valor siemplemente configurando la variable de entorno PORT en su sistema operativo. 
+
+Correr el comando
+
+ ```npm run dev```
+
+
+
+
+
+
  ## Base de datos 
 Esta aplicación utiliza una base de datos postgres que nos permite persistir la informacion para realizar operaciones de consulta, creación, modificación y eliminación de Clientes, Habitaciones, Productos, Reservas y registros. Con pequeños cambios en la configuracion se puede utilizar con otros motores de base de datos.
 
