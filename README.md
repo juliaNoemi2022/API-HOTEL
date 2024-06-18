@@ -56,7 +56,7 @@ El modelo de datos posee 7 tablas
 
   ```npx sequelize-cli db:migrate```
 
-  
+
 
 # Endpoints de la aplicación
 
@@ -88,3 +88,23 @@ El modelo de datos posee 7 tablas
 |  GET  |/habitaciones|Recupera el total de Habitaciones existentes|
 | POST  |/habitaciones |Crea una nueva Habitación|
 |DELETE|/habitaciones/:id|Elimina una Habitación por su número|
+
+
+
+### Registros
+
+| verbo |  endpoint  |descripcion|
+|-------|------------|-----------|
+|  GET  |/Registros/habitaciones/:id|Recupera un Registro de Habitación por su ID|
+|  GET  |/Registros/habitaciones|Recupera el total de Registro de Habitaciones existentes|
+|  GET  |/Registros/habitaciones/vencidos|Recupera el total de Registros de Habitaciones vencidas existentes|
+|  GET  |/Registros/productos/:id|Recupera un Registro de un Producto por su ID|
+|  GET  |/Registros/productos|Recupera el total de Registros de Productos existentes|
+|  GET  |/Registros/productos/vencidos|Recupera el total de Registros de Productos vencidos existentes|
+| POST  |Registros/habitaciones/checkin/:id |Realiza el check-in de una Habitación|
+| POST  |Registros/productos/checkin/:id |Realiza el check-in de un Producto|
+| PUT  |Registros/habitaciones/checkout/:id |Realiza el check-out de una habitación|
+| PUT  |Registros/habitaciones/:id |Realiza modificaciones de una Habitación existente|
+| PUT  |Registros/productos/:id |Realiza modificaciones de un Producto existente|
+|DELETE|/habitaciones/:id|Elimina una Habitación por su número|
+
