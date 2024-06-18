@@ -51,13 +51,12 @@ El modelo de datos posee 7 tablas
 ![Diagrama de base de datos](./imagen/diagrama%20de%20base%20de%20datos.png
 )
 
-## Para lanzar la aplicación
-* Ejecutar el comando **npm install**
-
-## Ejecutar la aplicación en modo desarrollo
-* Ejecutar el comando **npm run dev**
-
  ## Si ya se tiene Docker y dbeaver
+ Hacer correr el siguiente comando
+
+  ```npx sequelize-cli db:migrate```
+
+  
 
 # Endpoints de la aplicación
 
