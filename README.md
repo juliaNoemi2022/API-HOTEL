@@ -106,5 +106,6 @@ El modelo de datos posee 7 tablas
 | PUT  |Registros/habitaciones/checkout/:id |Realiza el check-out de una habitación|
 | PUT  |Registros/habitaciones/:id |Realiza modificaciones de una Habitación existente|
 | PUT  |Registros/productos/:id |Realiza modificaciones de un Producto existente|
-|DELETE|/habitaciones/:id|Elimina una Habitación por su número|
+|DELETE|/Registros/habitaciones/:id|Elimina un Registro de una Habitación por su ID|
+|DELETE|/Registros/productos/:id|Elimina un Registro de un Producto por su ID|
 
