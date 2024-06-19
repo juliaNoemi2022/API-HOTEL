@@ -167,7 +167,8 @@ curl --location 'http://localhost:3001/Reservas/Habitaciones/8' \
 --header 'Content-Type: application/json' \
 --data '{
             "CantPersonas": 3,
-            "FechaIngreso": "2024-05-17", "CantDias": 10,
+            "FechaIngreso": "2024-05-17", 
+            "CantDias": 10,
             "FechaEgreso": "2024-05-25",
             "Precio": 200000
         }'
@@ -180,8 +181,10 @@ curl --location 'http://localhost:3001/Reservas/Productos/5' \
 --header 'Content-Type: application/json' \
 --data '{
             "CantPersonas": 3,
-            "FechaIngreso": "2024-05-17", "CantDias": 10,
-            "FechaEgreso": "2024-05-25", "Precio": 200000
+            "FechaIngreso": "2024-05-17",
+            "CantDias": 10,
+            "FechaEgreso": "2024-05-25", 
+            "Precio": 200000
         }'
 ```
 
