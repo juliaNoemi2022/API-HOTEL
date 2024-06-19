@@ -370,13 +370,14 @@ curl --location --request PUT 'http://localhost:3001/Registros/Productos/1' \
 curl --location --request PUT 'http://localhost:3001/Registros/habitaciones/checkout/488' \
 --header 'Content-Type: application/json' \
 --data '{
-    "FechaCheckOut": "2024-05-25"
+   
+           "CantPersonas": 3,
+           "FechaIngreso": "2024-06-19",
+           "FechaEgreso": "2024-06-23",
+           "Precio": 200000
 }'
 
 ```
-
-
-
 
 
 

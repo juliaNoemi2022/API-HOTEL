@@ -451,7 +451,7 @@ function inicioMayorFin(inicio,fin){
           
 
       function diferencia(menor2, mayor2){
-        const menor = menor2.replace(/\s+/g, '');
+        const menor = menor2.toString().replace(/\s+/g, '');
         const mayor = mayor2.replace(/\s+/g, '');
           const pri2 = new Date(menor);
           const seg2 = new Date(mayor);
