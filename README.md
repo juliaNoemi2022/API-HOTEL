@@ -48,7 +48,7 @@ El modelo de datos posee 7 tablas
 
 # Diagrama de base de datos 
 
-![Diagrama de base de datos](./imagen/base%20de%20datos.png
+![Diagrama de base de datos](./Hotel-public.png
 )
 
  ## Si ya se tiene Docker y dbeaver
