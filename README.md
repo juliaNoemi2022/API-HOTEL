@@ -211,6 +211,7 @@ curl --location 'http://localhost:3001/productos/' \
 curl --location 'http://localhost:3001/Reservas/Habitaciones/8' \
 --header 'Content-Type: application/json' \
 --data '{
+            "dni": 12352078,
             "CantPersonas": 3,
             "FechaIngreso": "2024-05-17", 
             "CantDias": 10,
@@ -225,11 +226,11 @@ curl --location 'http://localhost:3001/Reservas/Habitaciones/8' \
 curl --location 'http://localhost:3001/Reservas/Productos/2' \
 --header 'Content-Type: application/json' \
 --data '{
+            "dni":2357, 
             "CantPersonas": 3,
-            "FechaIngreso": "2024-05-17",
-            "CantDias": 10,
-            "FechaEgreso": "2024-05-25", 
-            "Precio": 200000
+            "FechaReserva": "2024-06-19",
+            "Precio": 15000
+        
         }'
 ```
 
