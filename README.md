@@ -146,6 +146,20 @@ curl --location 'http://localhost:3001/clientes'\
         }'
 
 ```
+
+```
+curl --location 'http://localhost:3001/clientes'\
+--header 'Content-Type: application/json' \
+--data '{
+            "dni": 2357,
+            "nombre": "Omar",
+            "apellido": "Bazar", 
+            "fechaNacimiento": "1969-05-10", 
+            "email": "leo@yahoo.com",
+            "tarjeta": 123
+        }'
+
+```
 * Crear Habitaciones
 
 ```
