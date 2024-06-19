@@ -12,7 +12,7 @@ function fecha(dia,mes,anio){
                 return 1
             }    
           }   
-               //esta en fecha  = 0, no esta en fecha = 1
+             
                    return 0;
                
                           
@@ -42,7 +42,7 @@ function fecha2(egreso){
        else{
             return 0;
          }   
-               //esta en fecha  = 0, no esta en fecha = 1
+            
          
                
                           
@@ -104,7 +104,7 @@ function acumulaDia(egreso2, cant){
                 if(dia > 31){ 
                     dia=dia-31;
                     mes=mes+1; 
-                    //cant=cant-31;
+                   
                 }   
               break;
               
@@ -113,49 +113,49 @@ function acumulaDia(egreso2, cant){
                     
                     dia=dia-31;
                     mes=mes+1; 
-                    //cant=cant-31; 
+                  
                 }   
               break;
               case 5:
                 if(dia > 31){ 
                     dia=dia-31;
                     mes=mes+1; 
-                    //cant=cant-31; 
+                  
                 }   
               break;
               case 7:
                 if(dia > 31){ 
                     dia=dia-31;
                     mes=mes+1;
-                    //cant=cant-31;  
+                   
                 }   
               break;
               case 8:
                 if(dia > 31){ 
                     dia=dia-31;
                     mes=mes+1;
-                    //cant=cant-31;  
+                  
                 }   
               break;
               case 10:
                 if(dia > 31){ 
                     dia=dia - 31;
                     mes=mes+1; 
-                    //cant=cant-31; 
+                  
                 }   
               break;
               case 12:
                 if(dia > 31){ 
                     dia=dia-31;
                     mes=mes+1;  
-                    //cant=cant-31
+                  
                 }   
               break;
               case 4:
                 if(dia > 30){
                     dia=dia-30;
                     mes=mes+1;
-                    //cant=cant-30;
+                   
                 }
                 
               break;
@@ -163,7 +163,7 @@ function acumulaDia(egreso2, cant){
                 if(dia > 30){
                     dia=dia-30;
                     mes=mes+1;
-                    //cant=cant-30;
+                  
                 }
                 
               break;
@@ -171,7 +171,7 @@ function acumulaDia(egreso2, cant){
                 if(dia > 30){
                     dia=dia-30;
                     mes=mes+1;
-                    //cant=cant-30
+                   
                 }
                 
               break;
@@ -179,7 +179,7 @@ function acumulaDia(egreso2, cant){
                 if(dia > 30){
                     dia=dia-30;
                     mes=mes+1;
-                    //cant=cant-30;
+                   
                 }
                 
               break;
@@ -324,12 +324,11 @@ function comparaFin(fin, fechaComp){
   var mescomp = fechacomp.getMonth();
   const aniocomp = fechacomp.getFullYear();
   
-  //if(aniocomp > aniofin || aniocomp < anioini){
   if(aniocomp > aniofin){  
     return 1;
   }
 
-     //if(aniocomp == aniofin){
+  
         if(mescomp > mesfin){
              return 1;
         }else{

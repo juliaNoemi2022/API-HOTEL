@@ -137,7 +137,7 @@ El modelo de datos posee 7 tablas
 curl --location 'http://localhost:3001/clientes'\
 --header 'Content-Type: application/json' \
 --data '{
-            "dni": 123578,
+            "dni": 12352078,
             "nombre": "Julia",
             "apellido": "Avalos", 
             "fechaNacimiento": "1971-10-20", 

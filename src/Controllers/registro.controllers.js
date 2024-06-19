@@ -1,3 +1,5 @@
+
+
 const { CHAR, STRING, DATE } = require("sequelize")
 const funcion = require("../Helpers/funciones")
 
@@ -138,7 +140,7 @@ const modiRegistroHab = async(req, res, next) => {
        
         const habi2 = req.habi;
         
-            
+        const canty =   funcion.diferencia(data.FechaIngreso,data.FechaEgreso)+1;
             
                const reserby = {
                    "idCliente": reservada.idCliente,
@@ -147,10 +149,10 @@ const modiRegistroHab = async(req, res, next) => {
                    "CantPersonas": data.CantPersonas,
                    "FechaIngreso": data.FechaIngreso,
                    
-                   "CantDias": data.CantDias,
+                   "CantDias": canty,
                    
-                   "FechaEgreso": funcion.acumulaDia(data.FechaIngreso,data.CantDias),
-                   "Precio": data.CantDias * habi2.Precio
+                   "FechaEgreso": funcion.acumulaDia(data.FechaIngreso,canty),
+                   "Precio": canty * habi2.Precio
                }
                
                
