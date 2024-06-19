@@ -48,7 +48,7 @@ El modelo de datos posee 7 tablas
 
 # Diagrama de base de datos 
 
-![Diagrama de base de datos](./Hotel-public.png
+![Diagrama de base de datos](https://github.com/juliaNoemi2022/API-HOTEL/blob/main/Hotel%20-%20public.png
 )
 
  ## Si ya se tiene Docker y dbeaver
