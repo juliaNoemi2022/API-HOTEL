@@ -160,6 +160,9 @@ curl --location 'http://localhost:3001/clientes'\
         }'
 
 ```
+
+
+
 * Crear Habitaciones
 
 ```
@@ -182,6 +185,8 @@ curl --location 'http://localhost:3001/Habitaciones' \
             "Precio": 20000
         }'
 ```
+
+
 
 * Crear Productos
 
@@ -206,6 +211,8 @@ curl --location 'http://localhost:3001/productos/' \
 ```
 
 
+
+
 * Crear Reservas de Habitaciones
 ```
 curl --location 'http://localhost:3001/Reservas/Habitaciones/1' \
@@ -220,6 +227,8 @@ curl --location 'http://localhost:3001/Reservas/Habitaciones/1' \
 }'
 ```
 
+
+
 * Crear Reservas Productos
 
 ```
@@ -233,6 +242,9 @@ curl --location 'http://localhost:3001/Reservas/Productos/2' \
         
         }'
 ```
+
+
+
 
 * CheckIn Registros Habitaciones por ID
 
@@ -277,6 +289,21 @@ curl --location 'http://localhost:3001/Registros/Productos/checkin/14' \
         }'
 ```
  
+```
+curl --location 'http://localhost:3001/Registros/Productos/checkin/3' \
+--header 'Content-Type: application/json' \
+--data '{
+           "CantPersonas": 3,
+           "FechaIngreso": "2024-06-20",
+           "CantDias": 10,
+           "FechaEgreso": "2024-06-25",
+           "Precio": 150000
+        }'
+```
+
+
+
+
 * Modificar Reservas Habitaciones By ID
 ```
 curl --location --request PUT 'http://localhost:3001/reservas/habitaciones/8' \
@@ -305,6 +332,8 @@ curl --location --request PUT 'http://localhost:3001/reservas/productos/5' \
 ```
 
 
+
+
 * Modificar Registros Productos By ID
 
 ```
@@ -319,6 +348,10 @@ curl --location --request PUT 'http://localhost:3001/Registros/Productos/14' \
 }'
 
 ```
+
+
+
+
 * CheckOut Registros Habitaciones By ID
 ```
 curl --location --request PUT 'http://localhost:3001/Registros/habitaciones/checkout/488' \
@@ -327,9 +360,15 @@ curl --location --request PUT 'http://localhost:3001/Registros/habitaciones/chec
     "FechaCheckOut": "2024-05-25"
 }'
 
-
-
 ```
+
+
+
+
+
+
+
+
 
 * Modificar Registros Habitaciones By ID
 
