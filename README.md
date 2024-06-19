@@ -249,6 +249,20 @@ curl --location 'http://localhost:3001/Registros/habitaciones/checkin/488' \
 ```
 
 
+```
+curl --location 'http://localhost:3001/Registros/habitaciones/checkin/1' \
+--header 'Content-Type: application/json' \
+--data '{
+            "CantPersonas": 3,
+            "FechaIngreso": "2024-05-17",
+            "CantDias": 10,
+            "FechaEgreso": "2024-05-25",
+            "Precio": 200000
+        }'
+```
+
+
+
 * CheckIn Registros Productos By ID
 
 ```
