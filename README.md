@@ -204,6 +204,8 @@ curl --location 'http://localhost:3001/productos/' \
             "Habilitado": true
         }'
 ```
+
+
 * Crear Reservas de Habitaciones
 ```
 curl --location 'http://localhost:3001/Reservas/Habitaciones/8' \
