@@ -111,6 +111,7 @@ El modelo de datos posee 7 tablas
 
 
 ### Reservas
+
 | verbo |  endpoint  |descripcion|
 |-------|------------|-----------|
 |  GET  |/reservas/habitaciones/:id|Recupera una Reserva de Habitación por su ID|
@@ -129,3 +130,86 @@ El modelo de datos posee 7 tablas
 
 
 ### cURL para
+
+* Crear Cliente
+
+```
+curl --location 'http://localhost:3001/clientes'\
+--header 'Content-Type: application/json' \
+--data '{
+            "dni": 123578,
+            "nombre": "Julia",
+            "apellido": "Avalos", 
+            "fechaNacimiento": "1971-10-20", 
+            "email": "leo@yahoo.com",
+            "tarjeta": 123
+        }'
+
+```
+* Crear Habitaciones
+
+```
+curl --location 'http://localhost:3001/Habitaciones' \
+--header 'Content-Type: application/json' \
+--data '{
+            "numero": 3,
+            "Estrellas": 2,
+            "CantPersonas": 4, 
+            "Precio": 15000
+        }'
+```
+
+
+
+* Crear Reservas de Habitaciones
+```
+curl --location 'http://localhost:3001/Reservas/Habitaciones/8' \
+--header 'Content-Type: application/json' \
+--data '{
+            "CantPersonas": 3,
+            "FechaIngreso": "2024-05-17", "CantDias": 10,
+            "FechaEgreso": "2024-05-25",
+            "Precio": 200000
+        }'
+```
+
+* Crear Reservas Productos
+
+```
+curl --location 'http://localhost:3001/Reservas/Productos/5' \
+--header 'Content-Type: application/json' \
+--data '{
+            "CantPersonas": 3,
+            "FechaIngreso": "2024-05-17", "CantDias": 10,
+            "FechaEgreso": "2024-05-25", "Precio": 200000
+        }'
+```
+
+* CheckIn Registros Habitaciones por ID
+
+```
+curl --location 'http://localhost:3001/Registros/habitaciones/checkin/488' \
+--header 'Content-Type: application/json' \
+--data '{
+            "CantPersonas": 3,
+            "FechaIngreso": "2024-05-17",
+            "CantDias": 10,
+            "FechaEgreso": "2024-05-25",
+            "Precio": 200000
+        }'
+```
+
+
+* CheckIn Registros Productos By ID
+
+```
+curl --location 'http://localhost:3001/Registros/Productos/checkin/14' \
+--header 'Content-Type: application/json' \
+--data '{
+           "CantPersonas": 3,
+           "FechaIngreso": "2024-05-17",
+           "CantDias": 10,
+           "FechaEgreso": "2024-05-25",
+           "Precio": 200000
+        }'
+```
