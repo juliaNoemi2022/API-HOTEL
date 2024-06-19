@@ -213,3 +213,71 @@ curl --location 'http://localhost:3001/Registros/Productos/checkin/14' \
            "Precio": 200000
         }'
 ```
+ 
+* Modificar Reservas Habitaciones By ID
+```
+curl --location --request PUT 'http://localhost:3001/reservas/habitaciones/8' \
+--header 'Content-Type: application/json' \
+--data '{
+    "CantPersonas": 2,
+    "FechaIngreso": "2024-05-20",
+    "CantDias": 7,
+    "FechaEgreso": "2024-05-27",
+    "Precio": 180000
+}'
+```
+
+* Modificar Reservas Productos
+
+```
+curl --location --request PUT 'http://localhost:3001/reservas/productos/5' \
+--header 'Content-Type: application/json' \
+--data '{
+    "CantPersonas": 4,
+    "FechaIngreso": "2024-05-18",
+    "CantDias": 8,
+    "FechaEgreso": "2024-05-26",
+    "Precio": 220000
+}'
+```
+
+
+* Modificar Registros Productos By ID
+
+```
+curl --location --request PUT 'http://localhost:3001/Registros/Productos/14' \
+--header 'Content-Type: application/json' \
+--data '{
+    "CantPersonas": 4,
+    "FechaIngreso": "2024-05-16",
+    "CantDias": 12,
+    "FechaEgreso": "2024-05-28",
+    "Precio": 250000
+}'
+
+```
+* CheckOut Registros Habitaciones By ID
+```
+curl --location --request PUT 'http://localhost:3001/Registros/habitaciones/checkout/488' \
+--header 'Content-Type: application/json' \
+--data '{
+    "FechaCheckOut": "2024-05-25"
+}'
+
+
+
+```
+
+* Modificar Registros Habitaciones By ID
+
+```
+curl --location --request PUT 'http://localhost:3001/Registros/habitaciones/488' \
+--header 'Content-Type: application/json' \
+--data '{
+    "CantPersonas": 2,
+    "FechaIngreso": "2024-05-18",
+    "CantDias": 5,
+    "FechaEgreso": "2024-05-23",
+    "Precio": 150000
+}'
+```
