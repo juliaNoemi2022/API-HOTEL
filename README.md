@@ -1,4 +1,4 @@
-# API REST DE HOTEL
+# APP HOTEL
  Esta aplicación permite gestionar los clientes, habitaciones, productos y reservas de una empresa hotelera.
 
 
