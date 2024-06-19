@@ -158,6 +158,16 @@ curl --location 'http://localhost:3001/Habitaciones' \
             "Precio": 15000
         }'
 ```
+```
+curl --location 'http://localhost:3001/Habitaciones' \
+--header 'Content-Type: application/json' \
+--data '{
+            "numero": 8,
+            "Estrellas": 2,
+            "CantPersonas": 3, 
+            "Precio": 20000
+        }'
+```
 
 * Crear Productos
 
