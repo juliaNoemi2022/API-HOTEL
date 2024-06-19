@@ -166,11 +166,20 @@ curl --location 'http://localhost:3001/productos/' \
 --header 'Content-Type: application/json' \
 --data '{
             "Producto": "Cena",
-            "Precio": 10000000000,        
+            "Precio": 1000,        
             "Habilitado": true
         }'
 ```
 
+```
+curl --location 'http://localhost:3001/productos/' \
+--header 'Content-Type: application/json' \
+--data '{
+            "Producto": "Spa",
+            "Precio": 50000000,        
+            "Habilitado": true
+        }'
+```
 * Crear Reservas de Habitaciones
 ```
 curl --location 'http://localhost:3001/Reservas/Habitaciones/8' \
