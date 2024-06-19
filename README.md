@@ -208,16 +208,16 @@ curl --location 'http://localhost:3001/productos/' \
 
 * Crear Reservas de Habitaciones
 ```
-curl --location 'http://localhost:3001/Reservas/Habitaciones/8' \
+curl --location 'http://localhost:3001/Reservas/Habitaciones/1' \
 --header 'Content-Type: application/json' \
 --data '{
-            "dni": 12352078,
-            "CantPersonas": 3,
-            "FechaIngreso": "2024-05-17", 
-            "CantDias": 10,
-            "FechaEgreso": "2024-05-25",
-            "Precio": 200000
-        }'
+    "dni":12352078,
+    "CantPersonas": 2,
+    "FechaIngreso": "2024-06-25",
+    "CantDias": 7,
+    "FechaEgreso": "2024-06-27",
+    "Precio": 180000
+}'
 ```
 
 * Crear Reservas Productos
