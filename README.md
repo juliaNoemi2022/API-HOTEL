@@ -340,12 +340,25 @@ curl --location --request PUT 'http://localhost:3001/reservas/productos/5' \
 curl --location --request PUT 'http://localhost:3001/Registros/Productos/14' \
 --header 'Content-Type: application/json' \
 --data '{
-    "CantPersonas": 4,
-    "FechaIngreso": "2024-05-16",
-    "CantDias": 12,
-    "FechaEgreso": "2024-05-28",
-    "Precio": 250000
-}'
+    
+            "CantPersonas": 4,
+            "FechaReserva": "2024-06-19",
+            "Precio": 250000
+        
+    }'
+
+```
+
+```
+curl --location --request PUT 'http://localhost:3001/Registros/Productos/1' \
+--header 'Content-Type: application/json' \
+--data '{
+    
+            "CantPersonas": 2,
+            "FechaReserva": "2024-06-20",
+            "Precio": 200000
+        
+    }'
 
 ```
 
@@ -377,9 +390,21 @@ curl --location --request PUT 'http://localhost:3001/Registros/habitaciones/488'
 --header 'Content-Type: application/json' \
 --data '{
     "CantPersonas": 2,
-    "FechaIngreso": "2024-05-18",
+    "FechaIngreso": "2024-06-19",
     "CantDias": 5,
-    "FechaEgreso": "2024-05-23",
+    "FechaEgreso": "2024-06-23",
     "Precio": 150000
 }'
+```
+
+```
+curl --location --request PUT 'http://localhost:3001/Registros/habitaciones/1' \
+--header 'Content-Type: application/json' \
+--data '{
+            "CantPersonas": 2,
+            "FechaIngreso": "2024-06-19",
+            "CantDias": 5,
+            "FechaEgreso": "2024-06-23",
+            "Precio": 150000
+    }
 ```
