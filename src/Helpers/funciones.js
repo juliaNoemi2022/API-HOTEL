@@ -279,24 +279,21 @@ return hoy;
 
 function comparaInicio(inicio, fechaComp){
   const fechaini = new Date(inicio);
-  //const fechafin = new Date(fin);
   const fechacomp = new Date(fechaComp);
   var diaini = fechaini.getDate() + 1;
   var mesini = fechaini.getMonth();
   const anioini = fechaini.getFullYear();
-  //var diafin = fechafin.getDate() + 1;
-  //var mesfin = fechafin.getMonth();
-  //const aniofin = fechafin.getFullYear();
   var diacomp = fechacomp.getDate();
   var mescomp = fechacomp.getMonth();
   const aniocomp = fechacomp.getFullYear();
   
-  //if(aniocomp > aniofin || aniocomp < anioini){
+  
+  
   if(aniocomp < anioini){  
     return 1;
   }
 
-     //if(aniocomp == aniofin){
+    
         if(mescomp < mesini){
              return 1;
         }else{
@@ -311,12 +308,10 @@ function comparaInicio(inicio, fechaComp){
 
 
 function comparaFin(fin, fechaComp){
-  //const fechaini = new Date(inicio);
+
   const fechafin = new Date(fin);
   const fechacomp = new Date(fechaComp);
-  //var diaini = fechaini.getDate() + 1;
-  //var mesini = fechaini.getMonth();
-  //const anioini = fechaini.getFullYear();
+
   var diafin = fechafin.getDate() + 1;
   var mesfin = fechafin.getMonth();
   const aniofin = fechafin.getFullYear();
@@ -452,6 +447,11 @@ function inicioMayorFin(inicio,fin){
 
       function diferencia(menor2, mayor2){
         const menor = menor2.replace(/\s+/g, '');
+        if (typeof menor2 === 'string') {
+          menor2 = menor2.replace('old_value', 'new_value');
+      } else {
+          console.error('menor2 is not a string');
+      }
         const mayor = mayor2.replace(/\s+/g, '');
           const pri2 = new Date(menor);
           const seg2 = new Date(mayor);
