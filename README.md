@@ -222,7 +222,7 @@ curl --location 'http://localhost:3001/Reservas/Habitaciones/8' \
 * Crear Reservas Productos
 
 ```
-curl --location 'http://localhost:3001/Reservas/Productos/5' \
+curl --location 'http://localhost:3001/Reservas/Productos/2' \
 --header 'Content-Type: application/json' \
 --data '{
             "CantPersonas": 3,
